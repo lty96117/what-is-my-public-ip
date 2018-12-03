@@ -1,0 +1,18 @@
+{
+  "name": "what-is-my-public-ip",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "pm2": "pm2 start src/server.js --watch -i max",
+    "del-all": "pm2 del all"
+  },
+  "dependencies": {
+    "koa": "^2.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7",
+    "pm2": "^3.2.2"
+  }
+}
